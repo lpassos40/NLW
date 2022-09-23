@@ -20,12 +20,12 @@ jobs:
       - uses: actions/checkout@v2
 
     # Repositorio que será utilizado para gerar os arquivos.
-      - uses: Platane/snk@master
+      - uses: NLW/esports/mobile
         id: snake-gif
         with:
           github_user_name: lpassos40 #Seu usuario
-          gif_out_path: NLW/github-contribution-grid-snake.gif
-          svg_out_path: NLW/github-contribution-grid-snake.svg
+          gif_out_path: dist/github-contribution-grid-snake.gif
+          svg_out_path: dist/github-contribution-grid-snake.svg
 
       - run: git status
 
